@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adeel | Flutter Developer Profile</title>
+
+  <style>
+    :root {
+      --bg: #F6F5F1;
+      --card: #FFFFFF;
+      --ink: #1E2422;
+      --ink-soft: #52605C;
+      --accent: #0E7C86;
+      --accent-soft: #DCEEEF;
+      --amber: #E2A33D;
+      --rule: #E4E1D8;
+      --radius: 14px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      padding: 40px 16px;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      display: flex;
+      justify-content: center;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 680px;
+      background: var(--card);
+      border: 1px solid var(--rule);
+      border-radius: var(--radius);
+      box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+      overflow: hidden;
+    }
+
+    header {
+      padding: 40px 36px 28px;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .role-tag {
+      display: inline-block;
+      font-family: "Consolas", "SFMono-Regular", Menlo, monospace;
+      font-size: 13px;
+      color: var(--accent);
+      background: var(--accent-soft);
+      padding: 4px 10px;
+      border-radius: 6px;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      margin: 0 0 6px;
+      font-size: 36px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      color: var(--ink);
+    }
+
+    .subtitle {
+      margin: 0;
+      color: var(--ink-soft);
+      font-size: 16px;
+    }
+
+    section {
+      padding: 28px 36px;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    section:last-child {
+      border-bottom: none;
+    }
+
+    h2 {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      color: var(--accent);
+      margin: 0 0 14px;
+    }
+
+    p {
+      margin: 0 0 12px;
+      color: var(--ink);
+      max-width: 60ch;
+    }
+
+    p:last-child { margin-bottom: 0; }
+
+    /* Skills as a terminal-style panel */
+    .terminal {
+      background: #1E2422;
+      border-radius: 10px;
+      padding: 16px 20px;
+      font-family: "Consolas", "SFMono-Regular", Menlo, monospace;
+      font-size: 14px;
+    }
+
+    .terminal ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .terminal li {
+      color: #E7F3F1;
+      padding: 4px 0;
+    }
+
+    .terminal li::before {
+      content: "$ ";
+      color: var(--amber);
+    }
+
+    .contact-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 20px;
+      background: var(--accent);
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 15px;
+      font-weight: 600;
+      transition: background 0.15s ease;
+    }
+
+    .contact-link:hover {
+      background: #0B646D;
+    }
+
+    footer {
+      padding: 18px 36px;
+      font-size: 13px;
+      color: var(--ink-soft);
+      background: var(--bg);
+    }
+
+    /* Responsive */
+    @media (max-width: 480px) {
+      body { padding: 20px 10px; }
+      header, section, footer { padding-left: 22px; padding-right: 22px; }
+      h1 { font-size: 28px; }
+    }
+  </style>
+</head>
+<body>
+
+  <main class="card">
+    <header>
+      <h1>Adeel Ahmed</h1>
+      <span class="role-tag">Flutter &amp; Dart Developer</span>
+      <p class="subtitle">Building multi-platform apps with Flutter, Firebase, and the Stacked architecture.</p>
+    </header>
+
+    <section>
+      <h2>About Me</h2>
+      <p>
+        I'm a Flutter and Dart developer focused on building production-grade, multi-platform
+        applications for mobile and web. My current work centers on a food ordering app built
+        using the Stacked architecture framework, with Firebase and Firestore powering the backend.
+      </p>
+      <p>
+        I enjoy writing clean, maintainable code and structuring apps in a way that scales well
+        as features grow — from state management to backend integration and UI design.
+      </p>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <div class="terminal">
+        <ul>
+          <li>Flutter &amp; Dart</li>
+          <li>Stacked Architecture (MVVM)</li>
+          <li>Firebase &amp; Firestore</li>
+          <li>State Management</li>
+          <li>REST API Integration</li>
+          <li>Git &amp; Version Control</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>Feel free to reach out for collaboration or questions about my work.</p>
+      <a class="contact-link" href="mailto:adeel@example.com">Email Me</a>
+    </section>
+
+    <footer>
+      &copy; 2026 Adeel — Built with HTML &amp; CSS
+    </footer>
+  </main>
+
+</body>
+</html>
